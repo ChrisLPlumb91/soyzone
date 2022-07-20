@@ -1,1 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Sue+Ellen+Francisco&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sue Ellen Francisco', cursive;
+    color: #444444;
+    background-image: url(../images/k9006-3.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+}
+
+#logo {
+    font-size: 8rem;
+    letter-spacing: 8px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+#menu {
+    text-align: center;
+}
+
+#menu > li {
+    display: inline;
+    font-size: 4rem;
+    margin: 0 64px 0 64px;
+}
+
+li > a {
+    text-decoration: none;
+    color: inherit;
+}
