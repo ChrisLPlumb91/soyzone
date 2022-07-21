@@ -9,25 +9,33 @@
 body {
     font-family: 'Sue Ellen Francisco', cursive;
     color: #444444;
-    background-image: url(../images/soybeans.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
 }
 
 header {
-
+    height: 705px;  
+    background-image: url(../images/leaves-header.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 h1 {
+    font-size: 8rem;
+    letter-spacing: 8px;
+    text-shadow: 5px 5px 5px #f8be51;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h1, h2 {
     font-family: 'Chelsea Market', cursive;
 }
 
 #logo {
-    font-size: 8rem;
-    letter-spacing: 8px;
     text-align: center;
-    padding-top: 16px;
+    padding-top: 256px;
 }
 
 #menu {
@@ -46,5 +54,33 @@ h1 {
 }
 
 #menu a:hover{
-    color: #caa765;
-} 
+    text-shadow: 5px 5px 5px #f8be51;
+}
+
+.z-indexed {
+    position: relative;
+    z-index: 2;
+    font-size: 4rem;    
+}
+
+#intro-section {
+    position: relative;
+    height: 512px;
+    text-align: center;
+}
+
+#intro {
+    position: absolute;
+    top: 128px;
+    width: 100%;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    height: 248px;
+    background-image: url(../images/beans-footer.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
