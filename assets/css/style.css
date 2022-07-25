@@ -153,6 +153,11 @@ section {
     display: table;
 }
 
+#gradient-div {
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+}
+
 .find-us-halves {
     width: 50vw;
     height: 100%;
@@ -207,12 +212,9 @@ div > iframe {
 /* Footer styling */
 
 footer {
-    position: relative;
-    display: table;
     bottom: 0;
     height: 248px;
     width: 100%;
-    text-align: center;
     background-image: url(../images/beans-footer.png);
     background-size: auto;
     background-repeat: no-repeat;
@@ -220,8 +222,33 @@ footer {
 
 footer i {
     font-size: 4rem;
+    display: inline-block;
 }    
 
+#footer-inner-box {
+    width: 100vw;
+    height: 248px;
+}
+
+.logos {
+    text-shadow: 3px 3px 3px #444444;
+}
+
+#facebook-logo {
+    color: #4267B2;
+}
+
+#twitter-logo {
+    color: #1DA1F2;
+}
+
+#instagram-logo {
+    color: #E1306C;
+}
+
+#youtube-logo {
+    color: #FF0000;
+}
 @media screen and (max-width: 1233px) {
     #address-and-hours-half {
         float: left;
@@ -230,6 +257,11 @@ footer i {
     #map-half {
         float: left;
         width: 100vw;
+    }
+    #gradient-div {
+        width: 100%;
+        height: 100%;
+        display: table-cell;
     }
 }
 
