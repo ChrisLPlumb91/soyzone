@@ -42,14 +42,14 @@ h3 {
 
 #logo {
     text-align: center;
-    padding-top: 16%;
+    padding-top: 256px; 
 }
 
 #menu {
     text-align: center;
 }
 
-#menu > li {
+#menu li {
     display: inline;
     font-size: 4rem;
     margin: 0 64px 0 64px;
@@ -83,8 +83,9 @@ section {
 
 #intro-words {
     width: 100%;
-    position: absolute;
-    top: 256px;
+    /* position: absolute;
+    top: 256px; */
+    padding-top: 14%;
     text-align: center;
 }
 
@@ -93,13 +94,13 @@ section {
     text-shadow: 5px 5px 5px #f8be51;
 }
 
-
 #menu-link-section {
     text-align: center;
     position: relative;
     background: url(../images/table-with-food2.jpeg) no-repeat center center;
     box-sizing: border-box;
-    border: 2px solid #444444;
+    border-top: 2px solid #444444;
+    border-bottom: 2px solid #444444;     
 }
 
 #menu-button-box {
@@ -126,6 +127,7 @@ section {
     font-family: 'Sue Ellen Francisco', cursive;
     color: #fffefe;
     text-shadow: 3px 3px 3px #444444;
+    display: inline-block;
 }
 
 #menu-button:hover {
@@ -148,7 +150,7 @@ section {
 
 #find-us-section {
     background: url(../images/road.jpeg) no-repeat center center;
-    text-shadow: 3px 3px 3px #444444;
+    text-shadow: 3px 3px 3px #fffefe;
     line-height: 44px;
     display: table;
 }
@@ -161,7 +163,6 @@ section {
 .find-us-halves {
     width: 50vw;
     height: 100%;
-    color:#fffefe;
     box-sizing: border-box;
 }
 
@@ -249,6 +250,15 @@ footer i {
 #youtube-logo {
     color: #FF0000;
 }
+
+
+@media screen and (max-width: 1320px) {
+    #dark-text {
+        color: #fffefe;
+        text-shadow: 5px 5px 5px #444444;
+    }
+}
+
 @media screen and (max-width: 1233px) {
     #address-and-hours-half {
         float: left;
@@ -265,9 +275,20 @@ footer i {
     }
 }
 
+@media screen and (max-width: 1055px) {
+    .list-blocks {
+        display: block;
+    }  
+    
+    #menu li {
+        margin: 0 32px 0 32px;
+    }
+}
+
 @media screen and (max-width: 950px) {
     #menu-link-section {
         background: url(../images/table-with-food-narrow2.jpeg) no-repeat center center;
     }
 }
+
     
