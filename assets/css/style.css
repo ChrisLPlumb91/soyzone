@@ -154,7 +154,7 @@ section {
     display: table;
 }
 
-#gradient-div {
+#gradient-div-1 {
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255));
 }
@@ -221,7 +221,14 @@ div > iframe {
 
 #form-section {
     height: 1024px;
+    width: 100%;
     margin: 0;
+    background: url(../images/envelopes.jpeg) no-repeat center center;
+}
+
+#gradient-div-2 {
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255)), linear-gradient(to top, rgba(0, 0, 0, 0), rgb(255, 255, 255));
 }
 
 #contact-heading-container {
@@ -233,7 +240,7 @@ div > iframe {
 #contact-heading-box {
     width: 1024px;
     height: 256px;
-    background-color:rgba(116, 226, 52, 0.7);
+    background-color:#74e234b3;
     border: 2px solid #444444;
     border-radius: 8px 8px 0 0;
 }
@@ -252,7 +259,7 @@ div > iframe {
 #form-box-outer {
     width: 1024px;
     height: 512px;
-    background-color:#f8be51;
+    background-color:#f8be51b6;
     border: 2px solid #444444;
     border-radius: 0 0 8px 8px;
 }
@@ -295,14 +302,42 @@ textarea {
     display: inline-block;
     border: 2px solid #444444;
     border-radius: 4px;
-    padding: 8px 8px;
+    padding: 16px 16px;
     background-color:#f8be51;
+    resize: none;
 }
 
 textarea:focus {
     background-color: #fffefe; 
     box-shadow: 5px 5px rgba(116, 226, 52, 1);
 }    
+
+#button-box {
+    position: relative;
+    width: 420px;
+    height: 71px;
+}
+
+#submit-button {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 2rem;
+    padding: 2px 8px;
+    border: 2px solid #444444;
+    border-radius: 4px;
+    background-color:#74e234b3;
+    box-shadow: 2px 2px #444444;
+}
+
+#submit-button:hover {
+    background-color: #74e234;
+}
+
+#submit-button:active {
+    box-shadow: none;
+    position: absolute;
+    left: 344px;
+    top: 2px;
+}
 
 /* Footer styling */
 
@@ -378,6 +413,16 @@ footer i {
     
     #menu li {
         margin: 0 32px 0 32px;
+    }
+}
+
+@media screen and (max-width: 1047px) {
+    #contact-heading-box {
+        width: 512px;
+    }
+
+    #form-box-outer {
+        width: 512px;
     }
 }
 
