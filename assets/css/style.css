@@ -13,6 +13,26 @@ body {
     color: #444444;
 }
 
+#current-page {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color:#ee2a44d8;
+    border: 4px solid #444444;
+    border-radius: 16px;
+    padding: 4px 8px;
+    color:#1d1c1c;
+    z-index: 1;
+    text-shadow: 1px 1px 1px #fffefe;
+}
+
+#current-page:hover {
+    background-color:#ee2a44;
+    bottom: 4px;
+    right: 4px;
+    box-shadow: 2px 2px #f8be51;
+}
+
 /* Header styling */
 
 header {
@@ -32,7 +52,7 @@ h1 {
 h2 {
     font-size: 4rem;
     color: #fffefe;
-    text-shadow: 5px 5px 5px #444444;
+    text-shadow: 3px 3px 3px #444444;
 }
 
 h1, h2 {
@@ -63,8 +83,8 @@ a {
     color: #444444;
 }
 
-a:hover{
-    text-shadow: 5px 5px 5px #f8be51;
+a:hover {
+    text-shadow: 2px 2px 2px #f8be51;
 }
 
 section {
@@ -90,16 +110,20 @@ section {
 
 .dark-text {
     color:#444444;
-    text-shadow: 5px 5px 5px #f8be51;
+    text-shadow: 3px 3px 3px #f8be51;
 }
+
+/* Home page Menu section styling */
 
 #menu-link-section {
     text-align: center;
     position: relative;
-    background: url(../images/table-with-food2.jpeg) no-repeat center center;
-    box-sizing: border-box;
-    border-top: 2px solid #444444;
-    border-bottom: 2px solid #444444;     
+    background: url(../images/table-with-food2.jpeg) no-repeat center center; 
+}
+
+.gradient-div-1 {
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(255, 255, 255)), linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(255, 255, 255));
 }
 
 #menu-button-box {
@@ -149,12 +173,12 @@ section {
 
 #find-us-section {
     background: url(../images/road.jpeg) no-repeat center center;
-    text-shadow: 3px 3px 3px #fffefe;
+    text-shadow: 2px 2px 2px #fffefe;
     line-height: 44px;
     display: table;
 }
 
-#gradient-div-1 {
+#gradient-div-2 {
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255));
 }
@@ -226,9 +250,9 @@ div > iframe {
     background: url(../images/envelopes.jpeg) no-repeat center center;
 }
 
-#gradient-div-2 {
+.gradient-div-3 {
     height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255)), linear-gradient(to top, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(255, 255, 255)), linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(255, 255, 255));
 }
 
 #contact-heading-container {
@@ -323,7 +347,7 @@ textarea:focus {
     font-size: 2rem;
     padding: 2px 8px;
     border: 2px solid #444444;
-    border-radius: 4px;
+    border-radius: 50%;
     background-color:#74e234b3;
     box-shadow: 2px 2px #444444;
 }
@@ -399,7 +423,7 @@ footer i {
         float: left;
         width: 100vw;
     }
-    #gradient-div {
+    #gradient-div-1 {
         width: 100%;
         height: 100%;
         display: table-cell;
