@@ -239,7 +239,50 @@ div > iframe {
 
 /* Menu page styling */
 
+#menu-page {
+    width: 100vw;
+    height: 3000px;
+    font-size: 1.5rem;
+}
 
+#menu-page > div {
+    width: 50%;
+    margin-bottom: 32px;
+    float: left;
+}
+
+#lunch {
+}
+
+.inner-divs{
+    max-width: 800px;
+    padding: 20px;
+    text-align: left;
+}
+
+.inner-divs > h2 {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+#menu-page ul {
+    list-style-type: none;
+}
+
+#menu-page li {
+    margin-bottom: 32px;
+    line-height: 30px;
+}
+
+.subheading {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #f8be51;
+}
+
+#sweets {
+
+}
 
 /* Contact Us page styling */
 
