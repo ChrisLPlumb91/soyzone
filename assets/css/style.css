@@ -241,12 +241,12 @@ div > iframe {
 
 #menu-section-main {
     width: 100%;
-    min-height: 1700px;
+    min-height: 1800px;
     font-size: 1.5rem;
     margin-bottom: 0;
 }
 
-#full-menu-container > div {
+#menu-section-main > div {
     width: 50%;
     height: 1300px;
 }
@@ -293,7 +293,7 @@ div > iframe {
     width: 800px;
     height: 500px;
     text-align: left;
-    padding: 20px;
+    padding: 32px;
 }
 
 #menu-section-main ul {
@@ -313,6 +313,11 @@ div > iframe {
     text-shadow: 1px 1px 1px #f8be51;
 }
 
+#sweets-div {
+    vertical-align: top;
+    display: table-cell;
+    height: 400px;
+}
 
 /* Contact Us page styling */
 
