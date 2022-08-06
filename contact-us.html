@@ -28,49 +28,57 @@
                     </span>
                     <span class="list-blocks">
                         <li><a href="index.html#find-us-section">find us</a></li>
-                        <li><a href="contact-us.html">contact us</a></li>
+                        <li><a href="contact-us.html" class="active">contact us</a></li>
                     </span>
                 </ul>
             </nav>
         </header>
 
-        <section id="form-section" class="table-divs">        
+        <section id="form-section" class="table-divs">                                              <!-- form section start -->                                  
             <div class="gradient-div-3 table-cell-divs">
-                <div class="inline-block-divs">
-                    <div id="contact-heading-container" class="table-cell-divs">
-                        <div id="contact-heading-box" class="inline-block-divs">
-                            <div id="contact-heading-box-inner" class="table-cell-divs">
-                                <h2 class="dark-text inline-block-divs">Contact Us</h2>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div id="form-container" class="table-cell-divs">
-                        <div id="form-box-outer" class="inline-block-divs">
-                            <div id="form-box-inner" class="table-cell-divs">
-                                <form form method="POST" action="https://formdump.codeinstitute.net/" class="inline-block-divs">
-                                    <div>
-                                        <label for="fname">First Name</label>
-                                        <input type="text" id="fname" class="text-fields" name="first-name">
+                <div id="form-container-outer" class="inline-block-divs">                           <!-- form container - contains heading and body of form -->
+                    <div id="form-container-inner" class="table-divs">                        
+                        <div class="table-cell-divs">
+
+                            <div id="form-heading-container-outer" class="inline-block-divs">                   <!-- form heading start -->
+                                <div id="form-heading-container-inner" class="table-divs">
+                                    <div class=table-cell-divs>
+                                        <h2 class="dark-text">Contact Us</h2>
                                     </div>
-                                    <div>
-                                        <label for="lname">Last Name</label>
-                                        <input type="text" id="lname" class="text-fields" name="last-name">
+                                </div>
+                            </div>          
+
+                            <div id="form-body-container-outer" class="inline-block-divs">                       <!-- form body start -->
+                                <div id="form-body-container-inner" class="table-divs">
+                                    <div class="table-cell-divs">
+
+                                        <form form method="POST" action="https://formdump.codeinstitute.net/" class="inline-block-divs">
+                                            <div>
+                                                <label for="fname">First Name</label>
+                                                <input type="text" id="fname" class="text-fields" name="first-name">
+                                            </div>
+                                            <div>
+                                                <label for="lname">Last Name</label>
+                                                <input type="text" id="lname" class="text-fields" name="last-name">
+                                            </div>
+                                            <div>
+                                                <label for="email">Email Address</label>
+                                                <input type="email" id="email" class="text-fields" name="email-address">
+                                            </div>
+                                            <div>
+                                                <label for="msg">Message</label>
+                                            </div>
+                                            <div>
+                                                <textarea rows="4" cols="50" placeholder="Please be gentle!" id="msg" name="message"></textarea>
+                                            </div>
+                                            <div id="button-box">
+                                                <input type="submit" value="Submit" id="submit-button">
+                                            </div>        
+                                        </form>
+
                                     </div>
-                                    <div>
-                                        <label for="email">Email Address</label>
-                                        <input type="email" id="email" class="text-fields" name="email-address">
-                                    </div>
-                                    <div>
-                                        <label for="msg">Message</label>
-                                    </div>
-                                    <div>
-                                        <textarea rows="4" cols="50" placeholder="Please be gentle!" id="msg" name="message"></textarea>
-                                    </div>
-                                    <div id="button-box">
-                                        <input type="submit" value="Submit" id="submit-button">
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -78,14 +86,14 @@
             </div>
         </section>
 
-        <footer>
-            <div id="footer-inner-box" class="table-cell-divs">
+        <footer class="table-divs">
+            <div class="table-cell-divs">
                 <div id="social-container-outer" class="inline-block-divs">
-                        <a id="facebook-logo" class="logos" href="https://www.facebook.com/" target="_blank" class="social-icons"><i class="fab fa-facebook"></i></a>
-                        <a id="twitter-logo" class="logos" href="https://www.twitter.com" target="_blank" class="social-icons"><i class="fab fa-twitter-square"></i></a>
-                        <a id="instagram-logo" class="logos" href="https://www.instagram.com" target="_blank" class="social-icons"><i class="fab fa-instagram-square"></i></a>
-                        <a id="youtube-logo" class="logos" href="https://www.youtube.com" target="_blank" class="social-icons"><i class="fab fa-youtube-square"></i></a>
-                </div> 
+                    <a id="facebook-logo" class="logos" href="https://www.facebook.com/" target="_blank" class="social-icons"><i class="fab fa-facebook"></i></a>
+                    <a id="twitter-logo" class="logos" href="https://www.twitter.com" target="_blank" class="social-icons"><i class="fab fa-twitter-square"></i></a>
+                    <a id="instagram-logo" class="logos" href="https://www.instagram.com" target="_blank" class="social-icons"><i class="fab fa-instagram-square"></i></a>
+                    <a id="youtube-logo" class="logos" href="https://www.youtube.com" target="_blank" class="social-icons"><i class="fab fa-youtube-square"></i></a>
+                </div>    
             </div>      
         </footer>
 
