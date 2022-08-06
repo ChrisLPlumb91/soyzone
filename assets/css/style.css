@@ -91,7 +91,7 @@ section {
     height: 512px;
     width: 100%;
     margin-bottom: 128px;
-    position: relative;
+    /* position: relative; */
 }
 
 /* Home page Intro section styling */
@@ -241,82 +241,95 @@ div > iframe {
 
 #menu-section-main {
     width: 100%;
-    min-height: 1800px;
+    height: 1800px;
     font-size: 1.5rem;
     margin-bottom: 0;
+    background: url(../images/menu-bg.jpg) no-repeat top center;
 }
 
-#menu-section-main > div {
-    width: 50%;
-    height: 1300px;
+.gradient-div-4 {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(255, 255, 255));
 }
 
-.menu-heading-outer-divs {
+.inline-block-dimensions-1 {
+    width: 40%;
+    height: 1024px;
+}
+
+.table-dimensions-1 {
+    width: 100%;
+    height: 1024px;
+}
+
+.margin-right {
+    margin-right: 32px;
+}
+
+.margin-left {
+    margin-left: 32px;
+}
+
+.inline-block-dimensions-2 {
     width: 100%;
     height: 256px;
-    margin-top: 32px;
+    background-color:#74e234ce;
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    border-radius: 16px 16px 0 0;
     float: left;
 }
 
-.menu-heading-inner-divs {
-    max-width: 800px;
-    height: 256px;
-    border: 2px solid #444444;
-    border-radius: 8px 8px 0 0;
-    box-sizing: border-box;
-}
-
-.menu-heading-innermost-divs {
-    width: 800px;
-    height: 256px; 
-}
-
-.menu-outer-divs {
+.table-dimensions-2 {
     width: 100%;
-    height: 500px;
-    float: left;
+    height: 256px;
+    
 }
 
-.menu-inner-divs {
-    max-width: 800px;
-    height: 500px;
-    border: 2px solid #444444;
-    border-radius: 0 0 8px 8px;
-    box-sizing: border-box;
+.table-dimensions-2 h2 {
+    color: #444444;
+    text-shadow: 3px 3px 3px #f8be51;
 }
 
-.scrolling-div {
+.inline-block-dimensions-3 {
+    width: 100%;
+    height: 650px;
+    background-color:#f8be51ce;
+    padding: 32px 32px;
     overflow: auto;
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    border-radius: 0 0 16px 16px;
 }
 
-.menu-innermost-divs {
-    width: 800px;
-    height: 500px;
-    text-align: left;
-    padding: 32px;
+.table-dimensions-3 {
+    width: 100%;
+    height: 650px;
+}
+
+.smaller-menus {
+    vertical-align: top;
 }
 
 #menu-section-main ul {
     list-style-type: none;
-    max-width: 800px;
 }
 
 #menu-section-main li {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
     line-height: 30px;
+    text-align: left;
 }
 
-.subheading {
+#menu-section-main .subheading {
     text-align: center;
     font-size: 2rem;
-    text-shadow: 1px 1px 1px #f8be51;
+    text-shadow: 1px 1px 1px #fffefe;
 }
 
-#sweets-div {
-    vertical-align: top;
-    display: table-cell;
-    height: 400px;
+#menu-section-main span {
+    float: right;
+    text-shadow: 1px 1px 1px #fffefe;
 }
 
 /* Contact Us page styling */
@@ -501,7 +514,7 @@ footer i {
         float: left;
         width: 100vw;
     }
-    #gradient-div-1 {
+    #gradient-div-2 {
         width: 100%;
         height: 100%;
         display: table-cell;
@@ -528,10 +541,57 @@ footer i {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .inline-block-dimensions-1 {
+        width: 80%;
+    }
+
+    .margin-left {
+        margin-left: 0;
+    }
+
+    .margin-right {
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 950px) {
     #menu-link-section {
         background: url(../images/table-with-food-narrow2.jpeg) no-repeat center center;
     }
 }
 
+@media screen and (max-width: 778px) {
+    #menu-section-main {
+        height: 1500px;
+    }
+    
+    #menu-section-main h2 {
+        font-size: 2rem;
+    }
+
+    .inline-block-dimensions-1 {
+        height: 700px;
+    }
+
+    .table-dimensions-1 {
+        height: 700px;
+    }
+
+    .inline-block-dimensions-2 {
+        height: 128px;
+    }
+
+    .table-dimensions-2 {
+        height: 128px;
+    }
+
+    .inline-block-dimensions-3 {
+        height: 512px;
+    }
+
+    .table-dimensions-3 {
+        height: 512px;
+    }
+}
     
