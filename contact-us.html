@@ -18,24 +18,51 @@
     
     <body>
         <div id="current-page">you are here: <strong>contact us</strong></div>
-        <header>
-            <h1 id="logo">SOYZONE</h1>
-            <nav>
-                <ul id="menu">
-                    <span class="list-blocks">
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="menu.html">menu</a></li>
-                    </span>
-                    <span class="list-blocks">
-                        <li><a href="index.html#find-us-section">find us</a></li>
-                        <li><a href="contact-us.html" class="active">contact us</a></li>
-                    </span>
-                </ul>
-            </nav>
+
+        <header class="table-divs">
+            <div class="table-cell-divs">
+
+                <div id="header-elements-container-outer" class="inline-block-divs">
+                    <div id="header-elements-container-inner" class="table-divs">
+                        <div class="table-cell-divs">
+
+                            <div id="header-logo-container-outer" class="inline-block-divs">
+                                <div class="table-divs header-elements-containers-innermost">
+                                    <div class="table-cell-divs">
+                                        <h1 id="header-logo">SOYZONE</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div id="header-menu-container-outer" class="inline-block-divs">
+                                <div class="table-divs header-elements-containers-innermost">
+                                    <div class="table-cell-divs">
+                                        <nav>
+                                            <ul id="header-menu">
+                                                <span class="list-blocks">
+                                                    <li><a href="index.html">home</a></li>
+                                                    <li><a href="menu.html">menu</a></li>
+                                                </span>
+                                                <span class="list-blocks">
+                                                    <li><a href="index.html#find-us-section">find us</a></li>
+                                                    <li><a href="contact-us.html" class="active">contact us</a></li>
+                                                </span>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </header>
 
         <section id="form-section" class="table-divs">                                              <!-- form section start -->                                  
-            <div class="gradient-div-3 table-cell-divs">
+            <div id="gradient-div-4" class="table-cell-divs">
 
                 <div id="form-container-outer" class="inline-block-divs">                           <!-- form container - contains heading and body of form -->
                     <div id="form-container-inner" class="table-divs">                        
@@ -55,26 +82,32 @@
 
                                         <form form method="POST" action="https://formdump.codeinstitute.net/" class="inline-block-divs">
                                             <div>
-                                                <label for="fname">First Name</label>
+                                                <label for="fname" class="inline-block-divs">First Name</label>
                                                 <input type="text" id="fname" class="text-fields" name="first-name">
                                             </div>
+
                                             <div>
-                                                <label for="lname">Last Name</label>
+                                                <label for="lname" class="inline-block-divs">Last Name</label>
                                                 <input type="text" id="lname" class="text-fields" name="last-name">
                                             </div>
+
                                             <div>
-                                                <label for="email">Email Address</label>
+                                                <label for="email" class="inline-block-divs">Email Address</label>
                                                 <input type="email" id="email" class="text-fields" name="email-address">
                                             </div>
+
                                             <div>
                                                 <label for="msg">Message</label>
                                             </div>
+
                                             <div>
                                                 <textarea rows="4" cols="50" placeholder="Please be gentle!" id="msg" name="message"></textarea>
                                             </div>
+
                                             <div id="button-box">
                                                 <input type="submit" value="Submit" id="submit-button">
-                                            </div>        
+                                            </div>
+
                                         </form>
 
                                     </div>

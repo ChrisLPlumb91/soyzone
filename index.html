@@ -61,64 +61,87 @@
             </div>
         </header>
         
-        <section>
-            <div id="veg-box">
-                <div id="intro-words">
+        <section id="intro-section" class="table-divs">
+            <div class="table-cell-divs">
+                <div id="intro-words" class="inline-block-divs">
                     <h2>Co-operatively Owned</h2>
                     <h2>Cruelty-Free</h2>
                     <h2 class="dark-text">Tasty Food</h2> 
-                </div>  
+                </div> 
             </div>
         </section>
 
-        <section id="menu-link-section">
-            <div class="gradient-div-1">
-            <div id="menu-button-box">
-                <button id="menu-button">
-                    <a href="menu.html">menu</a>
-                </button> 
-            </div>
-            </div>
-        </section>
-
-        <section id="find-us-section">
-            <div id="gradient-div-2">
-            <div id="address-and-hours-half" class="find-us-halves table-cell-divs">
-                <div id="address-and-hours-boxes-container-outer" class="inline-block-divs">
-                    <div id="address-and-hours-boxes-container-inner" class="table-cell-divs">
-                        <div class="address-and-hours-boxes inline-block-divs">
-                            <div class="address-and-hours-boxes-inner table-cell-divs">
-                                <div class="inline-block-divs">
-                                    <h3>Location <i class="far fa-compass"></i></h3>
-                                    <p>Bean Street</p>
-                                    <p>Dublin 2</p>
-                                    <p>Co. Dublin</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="address-and-hours-boxes inline-block-divs">
-                            <div class="address-and-hours-boxes-inner table-cell-divs">
-                                <div class="inline-block-divs">
-                                    <h3>Opening Hours <i class="far fa-clock"></i></h3>
-                                    <p>Mon-Fri 8am to 3pm</p>
-                                    <p>Sat-Sun 9am to 4pm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="address-and-hours-boxes inline-block-divs">
-                            <div class="address-and-hours-boxes-inner table-cell-divs">
-                                <div class="inline-block-divs">
-                                    <h3>Phone <i class="fas fa-phone"></i></h3>
-                                    <p>084 0124816</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <section id="menu-link-section" class="table-divs">
+            <div id="gradient-div-1" class="table-cell-divs">
+                <div id="menu-button-box" class="inline-block-divs">
+                    <button id="menu-button">
+                        <a href="menu.html">menu</a>
+                    </button> 
                 </div>
             </div>
-            <div id="map-half" class="find-us-halves table-cell-divs">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8782446737746!2d-6.266868683965103!3d53.34543568248024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb559ea73%3A0x2600c7a819c83012!2sTemple%20Bar%2C%20Dublin!5e0!3m2!1sen!2sie!4v1658604787994!5m2!1sen!2sie" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="inline-block-divs"></iframe>
-            </div>
+        </section>
+
+        <section id="find-us-section" class="table-divs">
+            <div id="gradient-div-2" class="table-cell-divs">
+
+                <div id="address-and-hours-container-outer" class="inline-block-divs find-us-halves"> <!-- ID used in media query -->
+
+                    <div id="address-and-hours-container-inner" class="table-divs">
+                        <div class="table-cell-divs">
+
+                            <div class="address-and-hours-boxes-outer inline-block-divs">
+                                <div class="address-and-hours-boxes-inner table-divs">
+                                    <div class="table-cell-divs">
+                                        <h3>Location <i class="far fa-compass"></i></h3>
+                                        <p>Bean Street</p>
+                                        <p>Dublin 2</p>
+                                        <p>Co. Dublin</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="address-and-hours-boxes-outer inline-block-divs">
+                                <div class="address-and-hours-boxes-inner table-divs">
+                                    <div class="table-cell-divs">
+                                        <h3>Opening Hours <i class="far fa-clock"></i></h3>
+                                        <p>Mon-Fri 8am to 3pm</p>
+                                        <p>Sat-Sun 9am to 4pm</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="address-and-hours-boxes-outer inline-block-divs">
+                                <div class="address-and-hours-boxes-inner table-divs">
+                                    <div class="table-cell-divs">
+                                        <h3>Phone <i class="fas fa-phone"></i></h3>
+                                        <p>084 0124816</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div id="map-container-outer" class="inline-block-divs find-us-halves">
+
+                    <div id="map-container-inner" class="table-divs">
+                        <div class="table-cell-divs">
+                            
+                            <div id="map-box-outer" class="inline-block-divs">
+                                <div id="map-box-inner" class="table-divs">
+                                    <div class="table-cell-divs">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8782446737746!2d-6.266868683965103!3d53.34543568248024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb559ea73%3A0x2600c7a819c83012!2sTemple%20Bar%2C%20Dublin!5e0!3m2!1sen!2sie!4v1658604787994!5m2!1sen!2sie" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="inline-block-divs"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
 
