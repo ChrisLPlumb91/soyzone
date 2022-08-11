@@ -64,9 +64,6 @@ section {
     box-shadow: 2px 2px #f8be51;
 }
 
-
-/* Header styling */
-
 header {
     width: 100%;
     height: 705px;  
@@ -99,6 +96,10 @@ header {
     color:#f8be51;
 }
 
+.nav-container {
+    position: fixed;
+}
+
 #header-logo ~ h2 {
     font-size: 3rem;
 }
@@ -116,9 +117,6 @@ a:hover {
 .active {
     text-shadow: 2px 2px 2px #f8be51;
 }
-
-
-/* (Home page) Intro section styling */
 
 #intro-section {
     width: 100%;
@@ -138,9 +136,6 @@ a:hover {
     text-shadow: 3px 3px 3px #f8be51;
 }
 
-
-/* (Home page) Menu link section styling */
-
 #menu-link-section {
     background: #fffefe url(../images/table-with-food2.jpeg) no-repeat center center; 
 }
@@ -153,14 +148,18 @@ a:hover {
     width: 357px;
     height: 277px;
     border-radius: 50%;
+    border: 2px solid #444444;
+    background: url(../images/soybean.jpg) no-repeat center center;
+}
+
+#menu-button-box > .table-divs {
+    width: 357px;
+    height: 277px;
 }
 
 #menu-button {
-    padding: 64px 128px;
     font-size: 4rem;
-    border: 2px solid #444444;
-    border-radius: 50%;
-    background: url(../images/soybean.jpg) no-repeat center center;
+    background: transparent;
 }
 
 #menu-button > a {
@@ -169,7 +168,7 @@ a:hover {
     text-shadow: 3px 3px 3px #444444;
 }
 
-#menu-button:hover {
+#menu-button-box:hover {
     animation-name: button-image-zoom;
     animation-duration: 1s;
     animation-direction: alternate;
@@ -184,9 +183,6 @@ a:hover {
         transform: scale(1.1);
     }
 }
-
-
-/* (Home page) Find Us section styling */
 
 #find-us-section {
     width: 100%;
@@ -260,9 +256,6 @@ div > iframe {
     box-sizing: border-box;
     border-radius: 8%;
 }
-
-
-/* Menu page styling */
 
 #menu-section-main {
     width: 100%;
@@ -351,9 +344,6 @@ div > iframe {
     text-shadow: 1px 1px 1px #fffefe;
 }
 
-
-/* Contact Us page styling */
-
 #form-section {
     width: 100%;
     height: 1024px;
@@ -405,6 +395,7 @@ div > iframe {
 form {
     background-color:#fffefe;
     border: 2px solid #444444;
+    box-sizing: border-box;
     border-radius: 8px;
     padding: 16px;
     text-shadow: 2px 2px 2px #f8be51;
@@ -416,7 +407,6 @@ label {
 }
 
 .text-fields {
-    display: inline-block;
     width: 60%;
     height: 32px;
     border: 2px solid #444444;
@@ -427,7 +417,7 @@ label {
 
 .text-fields:focus {
     background-color: #fffefe; 
-    box-shadow: 5px 5px rgba(116, 226, 52, 1);
+    box-shadow: 5px 5px #74e234;
 }
 
 textarea {
@@ -442,21 +432,37 @@ textarea {
 
 textarea:focus {
     background-color: #fffefe; 
-    box-shadow: 5px 5px rgba(116, 226, 52, 1);
-}    
+    box-shadow: 5px 5px #74e234;
+}  
 
 #button-container {
     width: 100%;
     height: 71px;
+}
+
+#button-container > div {
+    text-align: right;
+}
+
+.button-box-outer {
+    width: 71px;
+    height: 71px;
+}
+
+.button-box-inner {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
 #submit-button {
+    width: 71px;
+    height: 71px;
     font-family: 'Sue Ellen Francisco', 'Comic Sans MS', cursive;
     font-size: 2rem;
-    padding: 2px 8px;
     border: 2px solid #444444;
     border-radius: 50%;
+    box-sizing: border-box;
     background-color:#74e234b3;
     box-shadow: 2px 2px #444444;
 }
@@ -468,12 +474,26 @@ textarea:focus {
 #submit-button:active {
     box-shadow: none;
     position: absolute;
-    left: 344px;
+    left: 2px;
     top: 2px;
 }
 
+.confirmation-message-container {
+    width: 512px;
+    height: 512px;
+    border-radius: 50%;
+    background: url(../images/flash.jpeg) no-repeat center center;
+    margin-top: 128px;
+}
 
-/* Footer styling */
+.confirmation-message-container .table-divs {
+    width: 100%;
+    height: 100%;
+}
+
+.confirmation-message-section p {
+    text-shadow: 2px 2px 2px #f8be51;
+}
 
 footer {
     width: 100%;
@@ -612,6 +632,10 @@ footer i {
 }
 
 @media screen and (max-width: 940px) {
+    header {
+        height: 640px;
+    }
+    
     #header-logo {
         font-size: 6rem;
     }
@@ -631,6 +655,10 @@ footer i {
 }
 
 @media screen and (max-width: 815px) {
+    #intro-words {
+        margin-bottom: 40px;
+    }
+
     #intro-words > h2 {
         font-size: 3rem;
     }
@@ -678,6 +706,11 @@ footer i {
 }
 
 @media screen and (max-width: 716px) {
+    header {
+        height: 512px;
+        background: #fffefe url(../images/leaves-header-shorter.png) no-repeat center center;
+    }
+    
     #header-logo {
         font-size: 3rem;
         text-shadow: 2px 2px 2px #f8be51;
@@ -705,6 +738,16 @@ footer i {
     }
 }
 
+@media screen and (max-width: 555px) {
+    #intro-words {
+        margin-bottom: 58px;
+    }
+    
+    #intro-words > h2 {
+        font-size: 2.5rem;
+    }
+}
+
 @media screen and (max-width: 519px) {
     .address-and-hours-boxes-outer p, .address-and-hours-boxes-outer h3 {
         font-size: 1.4rem;
@@ -713,17 +756,104 @@ footer i {
 }
 
 @media screen and (max-width: 462px) {
-    header {
-        height: 512px;
-        background: #fffefe url(../images/leaves-header-shorter.png) no-repeat center center;
+    #intro-section > div {
+        vertical-align: middle;
     }
 
+    #intro-words {
+        margin-bottom: 64px;
+    }
+    
+    #intro-words > h2 {
+        font-size: 2rem;
+    }
+    
     .list-blocks {
         display: block;
     }
 
     label {
         font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 402px) {
+    label {
+        font-size: 1.6rem;
+        line-height: 58px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .address-and-hours-boxes-outer {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    #form-heading-container-inner h2 {
+        font-size: 3rem;
+    }
+
+    #button-container > div {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    #menu-button-box {
+        width: 90vw;
+    }
+
+    #menu-button-box > .table-divs {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 369px) {
+    #form-body-container-inner label {
+        font-size: 1.4rem;
+        line-height: 58px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #form-body-container-outer {
+        height: 640px;
+    }    
+
+    #form-body-container-inner {
+        height: 640px;
+    }
+ 
+    .text-fields {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 316px) {
+    .address-and-hours-boxes-outer p, .address-and-hours-boxes-outer h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 297px) {
+    .address-and-hours-boxes-outer p, .address-and-hours-boxes-outer h3 {
+        font-size: 1.2rem;
+    }
+
+    #form-heading-container-outer {
+        height: 192px;
+    }
+
+    #form-heading-container-inner {
+        height: 192px;
+    }
+
+    #form-heading-container-inner h2 {
+        font-size: 2rem;
     }
 }
     
