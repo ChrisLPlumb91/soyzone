@@ -12,7 +12,29 @@
     </head>
 
     <body>
-        <div id="current-page">you are here: <strong>menu</strong></div>
+        
+        <!-- "You Are Here" message box -->
+        <div id="current-page-container-outermost" class="table-divs">
+            <div class="table-cell-divs">
+
+                <div id="current-page-container-outer-menu" class="inline-block-divs current-page-containers-outer">
+                    <div id="current-page-container-inner" class="table-divs">
+                        <div class="table-cell-divs">
+                            
+                            <div id="current-page-box-outer" class="inline-block-divs">
+                                <div id="current-page-box-inner" class="table-divs">
+                                    <div class="table-cell-divs">
+                                        <div id="current-page" class="inline-block-divs">you are here: <strong>home</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         
         <!-- Header -->
         <header class="table-divs">
@@ -32,12 +54,12 @@
                             <nav>
                                 <ul id="header-menu">
                                     <span class="list-blocks">
-                                        <li><a href="index.html" class="active">home</a></li>
-                                        <li><a href="menu.html">menu</a></li>
+                                        <li><a href="index.html" aria-label="Go to our home page.">home</a></li>
+                                        <li><a href="menu.html" aria-label="Go to our menu page." class="active">menu</a></li>
                                     </span>
                                     <span class="list-blocks">
-                                        <li><a href="index.html#find-us-section">find us</a></li>
-                                        <li><a href="contact-us.html">contact us</a></li>
+                                        <li><a href="index.html#find-us-section" aria-label="Jump to the page section containing our location, opening hours, and phone number.">find us</a></li>
+                                        <li><a href="contact-us.html" aria-label="Go to our contact page, where you can complete a contact form">contact us</a></li>
                                     </span>
                                 </ul>
                             </nav>
@@ -51,16 +73,16 @@
 
         <!-- Menus section -->
         <section id="menu-section-main" class="table-divs">
-            <div id="gradient-div-3" class="table-cell-divs">
+            <div id="gradient-3" class="table-cell-divs">
 
                 <!-- Breakfast menu container -->
-                <div class="inline-block-divs inline-block-dimensions-1 margin-right"> 
-                    <div class="table-divs table-dimensions-1">
+                <div class="inline-block-divs menu-containers-outer right-margin-menu-containers"> 
+                    <div class="table-divs menu-containers-inner">
                         <div class="table-cell-divs">
 
                             <!-- Breakfast menu heading -->
-                            <div class="inline-block-divs inline-block-dimensions-2"> 
-                                <div class="table-divs table-dimensions-2">
+                            <div class="inline-block-divs menu-heading-boxes-outer"> 
+                                <div class="table-divs menu-heading-boxes-inner">
                                     <div class="table-cell-divs">
                                         <h2 class="dark-text">Breakfast</h2>
                                     </div>
@@ -68,8 +90,8 @@
                             </div>
                             
                             <!-- Breakfast menu items -->
-                            <div class="inline-block-divs inline-block-dimensions-3"> 
-                                <div class="table-divs table-dimensions-3"> 
+                            <div class="inline-block-divs menu-options-boxes-outer"> 
+                                <div class="table-divs menu-options-boxes-inner"> 
                                     <div class="table-cell-divs smaller-menus">
                                         <ul>
                                             <li>Porridge: Hot porridge made with organic gluten-free Irish oats and organic rice milk. Choose your toppings. <span><strong>€2,00</strong></span></li>
@@ -90,13 +112,13 @@
                 </div>
 
                 <!-- Lunch menu container -->
-                <div class="inline-block-divs inline-block-dimensions-1 margin-left"> 
-                    <div class="table-divs table-dimensions-1">
+                <div class="inline-block-divs menu-containers-outer left-margin-menu-containers"> 
+                    <div class="table-divs menu-containers-inner">
                         <div class="table-cell-divs">
 
                             <!-- Lunch menu heading -->
-                            <div class="inline-block-divs inline-block-dimensions-2"> 
-                                <div class="table-divs table-dimensions-2">
+                            <div class="inline-block-divs menu-heading-boxes-outer"> 
+                                <div class="table-divs menu-heading-boxes-inner">
                                     <div class="table-cell-divs">
                                         <h2 class="dark-text">Lunch</h2>
                                     </div>
@@ -104,8 +126,8 @@
                             </div>
 
                             <!-- Lunch menu items -->
-                            <div class="inline-block-divs inline-block-dimensions-3"> 
-                                <div class="table-divs table-dimensions-3"> 
+                            <div class="inline-block-divs menu-options-boxes-outer"> 
+                                <div class="table-divs menu-options-boxes-inner"> 
                                     <div class="table-cell-divs">
                                         <ul>
                                             <li>
@@ -171,13 +193,13 @@
                 <div></div> 
 
                 <!-- Drinks menu container -->
-                <div id="drinks-menu-container" class="inline-block-divs inline-block-dimensions-1 margin-right"> 
-                    <div class="table-divs table-dimensions-1">
+                <div id="drinks-menu-container" class="inline-block-divs menu-containers-outer right-margin-menu-containers"> 
+                    <div class="table-divs menu-containers-inner">
                         <div class="table-cell-divs">
 
                             <!-- Drinks menu heading -->
-                            <div class="inline-block-divs inline-block-dimensions-2"> 
-                                <div class="table-divs table-dimensions-2">
+                            <div class="inline-block-divs menu-heading-boxes-outer"> 
+                                <div class="table-divs menu-heading-boxes-inner">
                                     <div class="table-cell-divs">
                                         <h2 class="dark-text">Drinks</h2>
                                     </div>
@@ -185,8 +207,8 @@
                             </div>
 
                             <!-- Drinks menu items -->
-                            <div class="inline-block-divs inline-block-dimensions-3"> 
-                                <div class="table-divs table-dimensions-3"> 
+                            <div class="inline-block-divs menu-options-boxes-outer"> 
+                                <div class="table-divs menu-options-boxes-inner"> 
                                     <div class="table-cell-divs">
                                         <ul>
                                             <li>
@@ -242,13 +264,13 @@
                 </div>
 
                 <!-- Sweets menu container -->
-                <div class="inline-block-divs inline-block-dimensions-1 margin-left"> 
-                    <div class="table-divs table-dimensions-1">
+                <div class="inline-block-divs menu-containers-outer left-margin-menu-containers"> 
+                    <div class="table-divs menu-containers-inner">
                         <div class="table-cell-divs">
 
                             <!-- Sweets menu heading -->
-                            <div class="inline-block-divs inline-block-dimensions-2"> 
-                                <div class="table-divs table-dimensions-2">
+                            <div class="inline-block-divs menu-heading-boxes-outer"> 
+                                <div class="table-divs menu-heading-boxes-inner">
                                     <div class="table-cell-divs">
                                         <h2 class="dark-text">Sweets</h2>
                                     </div>
@@ -256,8 +278,8 @@
                             </div>
 
                             <!-- Sweets menu items -->
-                            <div class="inline-block-divs inline-block-dimensions-3"> 
-                                <div class="table-divs table-dimensions-3"> 
+                            <div class="inline-block-divs menu-options-boxes-outer"> 
+                                <div class="table-divs menu-options-boxes-inner"> 
                                     <div class="table-cell-divs smaller-menus">
                                         <ul>
                                             <li>Banana Bread: home-made banana bread with chunky chocolate chips and walnuts. <span><strong>$3,00</strong></span></li>
@@ -283,10 +305,10 @@
         <footer class="table-divs">
             <div class="table-cell-divs">
                 <div class="inline-block-divs">
-                    <a id="facebook-logo" class="logos" href="https://www.facebook.com/" target="_blank" class="social-icons"><i class="fab fa-facebook"></i></a>
-                    <a id="twitter-logo" class="logos" href="https://www.twitter.com" target="_blank" class="social-icons"><i class="fab fa-twitter-square"></i></a>
-                    <a id="instagram-logo" class="logos" href="https://www.instagram.com" target="_blank" class="social-icons"><i class="fab fa-instagram-square"></i></a>
-                    <a id="youtube-logo" class="logos" href="https://www.youtube.com" target="_blank" class="social-icons"><i class="fab fa-youtube-square"></i></a>
+                    <a id="facebook-logo" class="logos" href="https://www.facebook.com/" aria-label="Go to our facebook page (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-facebook"></i></a>
+                    <a id="twitter-logo" class="logos" href="https://www.twitter.com" aria-label="Go to our twitter page (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-twitter-square"></i></a>
+                    <a id="instagram-logo" class="logos" href="https://www.instagram.com" aria-label="Go to our instagram page (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-instagram-square"></i></a>
+                    <a id="youtube-logo" class="logos" href="https://www.youtube.com" aria-label="Go to our youtube channel (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-youtube-square"></i></a>
                 </div>    
             </div>      
         </footer>

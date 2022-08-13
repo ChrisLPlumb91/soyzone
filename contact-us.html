@@ -17,7 +17,31 @@
     </head>
     
     <body>
-        <div id="current-page">you are here: <strong>contact us</strong></div>
+        
+        <!-- "You Are Here" message box -->
+        <div id="current-page-container-outermost" class="table-divs">
+            <div class="table-cell-divs">
+
+                <div id="current-page-container-outer-contact" class="inline-block-divs current-page-containers-outer">
+                    <div id="current-page-container-inner" class="table-divs">
+                        <div class="table-cell-divs">
+                            
+                            <div id="current-page-box-outer" class="inline-block-divs">
+                                <div id="current-page-box-inner" class="table-divs">
+                                    <div class="table-cell-divs">
+                                        <div id="current-page" class="inline-block-divs">you are here: <strong>home</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
 
         <!-- Header -->
         <header class="table-divs">
@@ -36,12 +60,12 @@
                             <nav>
                                 <ul id="header-menu">
                                     <span class="list-blocks">
-                                        <li><a href="index.html" class="active">home</a></li>
-                                        <li><a href="menu.html">menu</a></li>
+                                        <li><a href="index.html" aria-label="Go to our home page.">home</a></li>
+                                        <li><a href="menu.html" aria-label="Go to our menu page.">menu</a></li>
                                     </span>
                                     <span class="list-blocks">
-                                        <li><a href="index.html#find-us-section">find us</a></li>
-                                        <li><a href="contact-us.html">contact us</a></li>
+                                        <li><a href="index.html#find-us-section" aria-label="Jump to the page section containing our location, opening hours, and phone number.">find us</a></li>
+                                        <li><a href="contact-us.html" aria-label="Go to our contact page, where you can complete a contact form" class="active">contact us</a></li>
                                     </span>
                                 </ul>
                             </nav>
@@ -55,7 +79,7 @@
 
         <!-- Form section -->
         <section id="form-section" class="table-divs">                                                                                
-            <div id="gradient-div-4" class="table-cell-divs">
+            <div id="gradient-4" class="table-cell-divs">
 
                 <!-- form container -->
                 <div id="form-container-outer" class="inline-block-divs">                           
@@ -63,56 +87,54 @@
                         <div class="table-cell-divs">
 
                             <!-- form heading -->
-                            <div id="form-heading-container-outer" class="inline-block-divs">                   
-                                <div id="form-heading-container-inner" class="table-divs">
+                            <div id="form-heading-box-outer" class="inline-block-divs">                   
+                                <div id="form-heading-box-inner" class="table-divs">
                                     <div class=table-cell-divs>
-                                        <h2 class="dark-text">Contact Us</h2>
+                                        <h2 id="form-heading" class="dark-text">Contact Us</h2>
                                     </div>
                                 </div>
                             </div>        
 
                             <!-- form body -->
-                            <div id="form-body-container-outer" class="inline-block-divs">                       
-                                <div id="form-body-container-inner" class="table-divs">
+                            <div id="form-body-box-outer" class="inline-block-divs">                       
+                                <div id="form-body-box-inner" class="table-divs">
                                     <div class="table-cell-divs">
 
                                         <form form method="GET" action="confirmation.html" class="inline-block-divs">
                                 
-                                            <label for="fname" class="inline-block-divs">First Name</label>
-                                            <input type="text" id="fname" class="text-fields inline-block-divs" name="first-name" required/>
+                                            <label id="fname-label" for="fname" class="inline-block-divs">First Name</label>
+                                            <input type="text" id="fname" class="text-fields inline-block-divs" name="first-name" aria-labelledby="form-heading fname-label" required/>
                                             
                                             <div></div>
 
-                                            <label for="lname" class="inline-block-divs">Last Name</label>
-                                            <input type="text" id="lname" class="text-fields" name="last-name" required/>
+                                            <label id="lname-label" for="lname" class="inline-block-divs">Last Name</label>
+                                            <input type="text" id="lname" class="text-fields" name="last-name" aria-labelledby="form-heading lname-label" required/>
                                             
                                             <div></div>
                                     
-                                            <label for="email" class="inline-block-divs">Email Address</label>
-                                            <input type="email" id="email" class="text-fields" name="email-address" required/>
+                                            <label id="email-label" for="email" class="inline-block-divs">Email Address</label>
+                                            <input type="email" id="email" class="text-fields" name="email-address" aria-labelledby="form-heading email-label" required/>
 
                                             <div></div>
 
-                                            <label for="msg">Message</label>
+                                            <label id="msg-label" for="msg">Message</label>
 
                                             <div></div>
 
-                                            <textarea rows="4" cols="50" placeholder="Please be gentle!" id="msg" name="message" required></textarea>
+                                            <textarea rows="4" cols="50" placeholder="Please be gentle!" id="msg" name="message" aria-labelledby="form-heading msg-label" required></textarea>
                                             
                                             <div id="button-container" class="table-divs">
                                                 <div class="table-cell-divs">
                                                     <div class="inline-block-divs button-box-outer">
                                                         <div class="table-divs button-box-inner">
                                                             <div class="table-cell-divs ">
-                                                                <input type="submit" value="Submit" id="submit-button">
+                                                                <input type="submit" value="Submit" id="submit-button" aria-label="Click to submit your message.">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         
-                                            
-
                                         </form>
 
                                     </div>
@@ -130,10 +152,10 @@
         <footer class="table-divs">
             <div class="table-cell-divs">
                 <div class="inline-block-divs">
-                    <a id="facebook-logo" class="logos" href="https://www.facebook.com/" target="_blank" class="social-icons"><i class="fab fa-facebook"></i></a>
-                    <a id="twitter-logo" class="logos" href="https://www.twitter.com" target="_blank" class="social-icons"><i class="fab fa-twitter-square"></i></a>
-                    <a id="instagram-logo" class="logos" href="https://www.instagram.com" target="_blank" class="social-icons"><i class="fab fa-instagram-square"></i></a>
-                    <a id="youtube-logo" class="logos" href="https://www.youtube.com" target="_blank" class="social-icons"><i class="fab fa-youtube-square"></i></a>
+                    <a id="facebook-logo" class="logos" href="https://www.facebook.com/" aria-label="Go to our facebook page (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-facebook"></i></a>
+                    <a id="twitter-logo" class="logos" href="https://www.twitter.com" aria-label="Go to our twitter page (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-twitter-square"></i></a>
+                    <a id="instagram-logo" class="logos" href="https://www.instagram.com" aria-label="Go to our instagram page (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-instagram-square"></i></a>
+                    <a id="youtube-logo" class="logos" href="https://www.youtube.com" aria-label="Go to our youtube channel (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-youtube-square"></i></a>
                 </div>    
             </div>      
         </footer>

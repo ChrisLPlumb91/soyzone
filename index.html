@@ -17,8 +17,30 @@
     </head>
     
     <body>
-        <div id="current-page">you are here: <strong>home</strong></div>
 
+        <!-- "You Are Here" message box -->
+        <div id="current-page-container-outermost" class="table-divs">
+            <div class="table-cell-divs">
+
+                <div id="current-page-container-outer-home" class="inline-block-divs current-page-containers-outer">
+                    <div id="current-page-container-inner" class="table-divs">
+                        <div class="table-cell-divs">
+                            
+                            <div id="current-page-box-outer" class="inline-block-divs">
+                                <div id="current-page-box-inner" class="table-divs">
+                                    <div class="table-cell-divs">
+                                        <div id="current-page" class="inline-block-divs">you are here: <strong>home</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>       
+           
         <!-- Header -->
         <header class="table-divs">
             <div class="table-cell-divs">
@@ -36,12 +58,12 @@
                             <nav>
                                 <ul id="header-menu">
                                     <span class="list-blocks">
-                                        <li><a href="index.html" class="active">home</a></li>
-                                        <li><a href="menu.html">menu</a></li>
+                                        <li><a href="index.html" aria-label="Go to our home page." class="active">home</a></li>
+                                        <li><a href="menu.html" aria-label="Go to our menu page.">menu</a></li>
                                     </span>
                                     <span class="list-blocks">
-                                        <li><a href="index.html#find-us-section">find us</a></li>
-                                        <li><a href="contact-us.html">contact us</a></li>
+                                        <li><a href="index.html#find-us-section" aria-label="Jump to the page section containing our location, opening hours, and phone number.">find us</a></li>
+                                        <li><a href="contact-us.html" aria-label="Go to our contact page, where you can complete a contact form">contact us</a></li>
                                     </span>
                                 </ul>
                             </nav>
@@ -66,12 +88,12 @@
 
         <!-- Menu link section -->
         <section id="menu-link-section" class="table-divs">
-            <div id="gradient-div-1" class="table-cell-divs">
-                <div id="menu-button-box" class="inline-block-divs">
-                    <div class="table-divs">
+            <div id="gradient-1" class="table-cell-divs">
+                <div id="menu-button-container-outer" class="inline-block-divs">
+                    <div id="menu-button-container-inner" class="table-divs">
                         <div class="table-cell-divs">
                             <button id="menu-button" class="inline-block-divs">
-                                <a href="menu.html">menu</a>
+                                <a href="menu.html" aria-label="Go to our menu page.">menu</a>
                             </button> 
                         </div>
                     </div>
@@ -81,16 +103,16 @@
 
         <!-- Find Us section -->
         <section id="find-us-section" class="table-divs">
-            <div id="gradient-div-2" class="table-cell-divs">
+            <div id="gradient-2" class="table-cell-divs">
 
                 <!-- Address, Hours, and Phone container -->
-                <div id="address-and-hours-container-outer" class="inline-block-divs find-us-halves">
-                    <div id="address-and-hours-container-inner" class="table-divs">
+                <div id="address-hours-phone-container-outer" class="inline-block-divs find-us-halves">
+                    <div id="address-hours-phone-container-inner" class="table-divs">
                         <div class="table-cell-divs">
 
                             <!-- Address -->
-                            <div class="address-and-hours-boxes-outer inline-block-divs">
-                                <div class="address-and-hours-boxes-inner table-divs">
+                            <div class="address-hours-phone-boxes-outer inline-block-divs">
+                                <div class="address-hours-phone-boxes-inner table-divs">
                                     <div class="table-cell-divs">
                                         <h3>Location <i class="far fa-compass"></i></h3>
                                         <p>Bean Street</p>
@@ -101,8 +123,8 @@
                             </div>
 
                             <!-- Hours -->
-                            <div class="address-and-hours-boxes-outer inline-block-divs">
-                                <div class="address-and-hours-boxes-inner table-divs">
+                            <div class="address-hours-phone-boxes-outer inline-block-divs">
+                                <div class="address-hours-phone-boxes-inner table-divs">
                                     <div class="table-cell-divs">
                                         <h3>Opening Hours <i class="far fa-clock"></i></h3>
                                         <p>Mon-Fri 8am to 3pm</p>
@@ -112,8 +134,8 @@
                             </div>
 
                             <!-- Phone -->
-                            <div class="address-and-hours-boxes-outer inline-block-divs">
-                                <div class="address-and-hours-boxes-inner table-divs">
+                            <div class="address-hours-phone-boxes-outer inline-block-divs">
+                                <div class="address-hours-phone-boxes-inner table-divs">
                                     <div class="table-cell-divs">
                                         <h3>Phone <i class="fas fa-phone"></i></h3>
                                         <p>084 0124816</p>
@@ -150,10 +172,10 @@
         <footer class="table-divs">
             <div class="table-cell-divs">
                 <div class="inline-block-divs">
-                    <a id="facebook-logo" class="logos" href="https://www.facebook.com/" target="_blank" class="social-icons"><i class="fab fa-facebook"></i></a>
-                    <a id="twitter-logo" class="logos" href="https://www.twitter.com" target="_blank" class="social-icons"><i class="fab fa-twitter-square"></i></a>
-                    <a id="instagram-logo" class="logos" href="https://www.instagram.com" target="_blank" class="social-icons"><i class="fab fa-instagram-square"></i></a>
-                    <a id="youtube-logo" class="logos" href="https://www.youtube.com" target="_blank" class="social-icons"><i class="fab fa-youtube-square"></i></a>
+                    <a id="facebook-logo" class="logos" href="https://www.facebook.com/" aria-label="Go to our facebook page (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-facebook"></i></a>
+                    <a id="twitter-logo" class="logos" href="https://www.twitter.com" aria-label="Go to our twitter page (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-twitter-square"></i></a>
+                    <a id="instagram-logo" class="logos" href="https://www.instagram.com" aria-label="Go to our instagram page (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-instagram-square"></i></a>
+                    <a id="youtube-logo" class="logos" href="https://www.youtube.com" aria-label="Go to our youtube channel (opens in new tab)" target="_blank" class="social-icons"><i class="fab fa-youtube-square"></i></a>
                 </div>    
             </div>      
         </footer>
