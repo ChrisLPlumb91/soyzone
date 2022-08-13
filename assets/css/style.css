@@ -181,7 +181,7 @@ a:hover {
 /* Home page Menu Link section styling */
 
 #menu-link-section {
-    background: #fffefe url(../images/table-with-food2.jpeg) no-repeat center center; 
+    background: #fffefe url(../images/table-with-food.jpeg) no-repeat center center; 
 }
 
 #gradient-1 {
@@ -742,7 +742,7 @@ footer i {
 
 @media screen and (max-width: 950px) {
     #menu-link-section {
-        background: #fffefe url(../images/table-with-food-narrow2.jpeg) no-repeat center center;
+        background: #fffefe url(../images/table-with-food-narrow.jpeg) no-repeat center center;
     }
 }
 
