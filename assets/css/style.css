@@ -44,8 +44,36 @@ section {
     margin-bottom: 128px;
 }
 
+/* The three rules below are important parts of a centering technique that I used across the website. These classes are called many times. The technique works by
+creating a div, setting its display to table, then nesting a div with display: table-cell within it, and then nesting a div with display: inline-block within that.
+The table-cell will perfectly center the inline-block child within itself if it (the table-cell, that is) is given text-align: center and vertical-align: middle properties. 
+Moreover, the table-cell itself must be nested within a table div for this to work. If you do not follow the pattern of table - table-cell - inline-block, a number of
+weird issues crop up. In any case, by following this pattern, you can nest and centre as many times as you want. 
+
+Often, I would set the width of the table div to a percentage, and the height to a pixel measurement. A table-cell automatically stretches to fit its container if
+that container is set to table display. Then, I would nest an inline-block in the table-cell, and give it a width of a smaller percentage to the table, or indeed
+a pixel value equivalent, as well as a smaller height. Giving the inline-block a border would reveal it to be centered perfectly within the table/table-cell.
+
+That is the basic technique, and I found it to be quite adaptable. Throughout the site, I used it to produce various different visual results, and I was successful 
+each time. */
+.table-divs {
+    display: table;
+}
+
+.table-cell-divs {
+    display: table-cell;
+
+    vertical-align: middle;
+    text-align: center;
+}
+
+.inline-block-divs {
+    display: inline-block;
+}
+
 /* "You Are Here" message styling */
 
+/* This rule ensures that you can interact with elements underneath the selected div, which covers the entire page at all times. */
 #current-page-container-outermost {
     width: 100%;
     height: 100%;
@@ -68,8 +96,6 @@ section {
 #current-page-container-inner {
     width: 100%;
     height: 100%;
-
-    position: relative;
 }
 
 #current-page-container-inner > div {
@@ -88,6 +114,13 @@ section {
     position: relative;
 }
 
+/* This rule styles the You Are Here message, but also ensures that it can be interacted with despite its parent container's pointer-events property being set to none. 
+The styling includes the use of border-radius and box-sizing, which round the corners of the box, and incorporate the boxes border into its total width as defined
+below, rather than adding to it. This keeps it compact, and from doing anything funny when it pops. 
+
+The text-shadow property gives the text in the box an embossed look, and makes it much easier to read.
+
+Variations of this group of properties are used throughout the website. */
 #current-page {
     width: 190px;
     height: 79px;
@@ -105,6 +138,8 @@ section {
     pointer-events: stroke;  
 }
 
+/* This rule causes the You Are Here message box to pop out when you hover over it. Its position is set to absolute, and it is positioned relative to its direct, equally-sized 
+parent so that it always moves in the same way regardless of screen size. */
 #current-page:hover {
     background-color:#ee2a44;
 
@@ -184,6 +219,11 @@ a:hover {
     background: #fffefe url(../images/table-with-food.jpeg) no-repeat center center; 
 }
 
+/* This rule applies a colour gradient to a div. This appears to blend each background image with the white background colour of the website. The more colour stops
+you use, the more the div is divided into sections of colour, and comma-separating each linear gradient enables you add more than one. In this case, I have added
+a gradient that fades from the top, and another one that fades from the bottom. The rgba values that are set to (0, 0, 0, 0) are effectively the absence of any
+colour. 3/4s of the div are taken up by these non-colours, and then the last quarter is the white. This ensures that the gradients don't completely cover the
+background image. */
 #gradient-1 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(255, 255, 255)), linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(255, 255, 255));
 }
@@ -212,6 +252,7 @@ a:hover {
     text-shadow: 3px 3px 3px #444444;
 }
 
+/* This rule causes the menu link button to grow and shrink when you hover over it. It references the animation below. */
 #menu-button-container-outer:hover {
     animation-name: button-image-zoom;
     animation-duration: 1s;
@@ -219,6 +260,7 @@ a:hover {
     animation-iteration-count: infinite;
 }
 
+/* This animation zooms in on a given element (and its background image) */
 @keyframes button-image-zoom {
     from{
         transform: scale(1);
@@ -230,6 +272,7 @@ a:hover {
 
 /* Home page Find-Us section styling */
 
+/* This rule styles the find us section, reducing the current line height so that the information in the three boxes looks better and is mroe compact. */
 #find-us-section {
     width: 100%;
     height: 512px;
@@ -242,21 +285,6 @@ a:hover {
 
 #gradient-2 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(255, 255, 255));
-}
-
-.table-divs {
-    display: table;
-}
-
-.table-cell-divs {
-    display: table-cell;
-
-    vertical-align: middle;
-    text-align: center;
-}
-
-.inline-block-divs {
-    display: inline-block;
 }
 
 .find-us-halves {
@@ -308,6 +336,7 @@ div > iframe {
 
 /* Menu page styling */
 
+/* This rule sizes the menu section of the menu page, and removes the margin added by the section element selector, which is used only by the home page sections. */
 #menu-section-main {
     width: 100%;
     height: 1800px;
@@ -340,6 +369,7 @@ div > iframe {
     margin-left: 32px;
 }
 
+/* This rule styles the heading boxes of each menu. The use of float is necessary to remove the vertical gap between the top and bottom divs that make up a menu. */
 .menu-heading-boxes-outer {
     width: 100%;
 
@@ -357,6 +387,8 @@ div > iframe {
     height: 256px;   
 }
 
+/* This rule styles the actual menu part of the menus, and setting their overflow property to auto gives them a scroll bar that prevents them from having 
+the height of their contents, and instead contains them within the height of their container. */
 .menu-options-boxes-outer {
     width: 100%;
     height: 650px;
@@ -383,6 +415,8 @@ div > iframe {
     list-style-type: none;
 }
 
+/* This rule creates space between the items on the menus to make them more readable, and also aligns them to the left, overriding the table-cell display 
+container's text-align: center. */
 #menu-section-main li {
     line-height: 30px;
     text-align: left;
@@ -409,6 +443,7 @@ div > iframe {
     line-height: 30px;
 }
 
+/* The margin property here overrides the section element selector, which itself is mainly used to create space between the sections of the home page. */
 #form-section {
     width: 100%;
     height: 1024px;
@@ -431,6 +466,7 @@ div > iframe {
     height: 770px;
 }
 
+/* This rule uses the same float technique that I used to bring the two parts of the menus together. */
 #form-heading-box-outer {
     width: 100%;
 
@@ -494,6 +530,9 @@ label {
     box-shadow: 5px 5px #74e234;
 }
 
+
+/* This rule styles the textarea element into which the user can enter their message. It sets the resize property to none, as resizing the text box can very easily 
+ruin the structural integrity of the page. Instead, the user can scroll through what they have written. */
 textarea {
     width: 100%;
     
@@ -533,6 +572,8 @@ textarea:focus {
     position: relative;
 }
 
+/* This rule styles the submit button of the form. Its position is set to relative so that z-index can be used (using absolute causes it to slip off the form), and the 
+purpose of z-index here is to ensure that the You Are Here message box appears on top of the button, rather than slipping underneath it when the two cross. */
 #submit-button {
     width: 71px;
     height: 71px;
@@ -555,6 +596,8 @@ textarea:focus {
     background-color: #74e234;
 }
 
+/* This rule causes the button to "animate" when clicked. It appears to get pushed in because its box-shadow property is set to none. The use of positional properties here
+creates the illusion of movement by moving the button slightly at the same time that it loses its box-shadow */
 #submit-button:active {
     box-shadow: none;
 
@@ -730,7 +773,7 @@ footer i {
     }
 }
 
-
+/* The next three media queries are necessary for the confirmation page to look good on several tablet devices. */
 @media screen and (min-height: 1024px) {
     .confirmation-message-section {
         height: 768px;
@@ -776,6 +819,8 @@ footer i {
     }
 }
 
+/* This media query changes the background image of the menu link section to a truncated version of the normal one. Without this, all you can see is a wooden table,
+and no food. */
 @media screen and (max-width: 950px) {
     #menu-link-section {
         background: #fffefe url(../images/table-with-food-narrow.jpeg) no-repeat center center;
@@ -856,6 +901,9 @@ footer i {
         height: 256px;
     }
 
+    /* This rule causes the menus to expand when you hover over them. This is necessary to reduce the amount of scrolling the user has to do in order to read the menus 
+    when they are viewing the page on a device with a narrow screen. Moreover, the use of z-index here places the menus on the top of the z-axis, causing them to cover 
+    the You Are Here message box. At small screen resolutions, the You Are Here box would get in the way of the menus otherwise. */
     .menu-options-boxes-outer:hover {
         height: 512px;
 
@@ -974,16 +1022,6 @@ footer i {
 @media screen and (max-width: 391px) {
     #current-page-container-inner > div {
         text-align: center;
-    }
-
-    #current-page:hover {
-        background-color:#ee2a44;
-
-        box-shadow: 2px 2px #f8be51;
-
-        position: absolute;
-        bottom: 4px;
-        right: 4px;
     }
 
     #form-heading-box-inner h2 {
