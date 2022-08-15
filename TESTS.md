@@ -181,6 +181,7 @@ The only issue I noticed was that the email input element seems to accept my ema
 
 ## Validator Results
 
-W3C:
+W3C: 
+<img src="assets/images/W3C-validator-pass.jpg" alt="A screenshot of the W3C validator not finding any errors with my website.">
 
 Jigsaw: http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchrislplumb91.github.io%2Fsoyzone%2F&usermedium=all&vextwarning=&warning=1
