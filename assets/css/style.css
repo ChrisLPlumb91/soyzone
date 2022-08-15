@@ -405,6 +405,10 @@ div > iframe {
 
 /* Contact Us page styling */
 
+.contact-page-you-are-here {
+    line-height: 30px;
+}
+
 #form-section {
     width: 100%;
     height: 1024px;
@@ -559,11 +563,10 @@ textarea:focus {
     top: 2px;
 }
 
-/* Fom submission Confirmation page styling */
+/* Form submission Confirmation page styling */
 
 .confirmation-message-container {
     width: 512px;
-    height: 512px;
 
     background: url(../images/flash.jpeg) no-repeat center center;
 
@@ -573,11 +576,22 @@ textarea:focus {
 
 .confirmation-message-container .table-divs {
     width: 100%;
-    height: 100%;
+    height: 512px;
 }
 
 .confirmation-message-section p {
     text-shadow: 2px 2px 2px #f8be51;
+}
+
+.redirect-now > a {
+    color:#f8be51;
+    text-shadow: 1px 1px 1px #444444;
+}
+
+.redirect-now > a:hover {
+    color:#74e234;
+    text-shadow: 1px 1px 1px #444444;
+    text-decoration: underline;
 }
 
 /* Footer styling */
@@ -713,6 +727,28 @@ footer i {
 
     div > iframe {
         height: 256px;
+    }
+}
+
+
+@media screen and (min-height: 1024px) {
+    .confirmation-message-section {
+        height: 768px;
+        background: #fffefe url(../images/leaves-header.png) no-repeat center top;
+    }
+}
+
+@media screen and (min-height: 1180px) {
+    .confirmation-message-section {
+        height: 924px;
+        background: #fffefe url(../images/leaves-header.png) no-repeat center top;
+    }
+}
+
+@media screen and (min-height: 1368px) {
+    .confirmation-message-section {
+        height: 1112px;
+        background: #fffefe url(../images/leaves-header.png) no-repeat center top;
     }
 }
 
@@ -854,6 +890,11 @@ footer i {
     #header-menu li {
         font-size: 2.5rem;
     }
+
+    .confirmation-message-section {
+        height: 768px;
+        background: #fffefe url(../images/leaves-header.png) no-repeat center top;
+    }
 }
 
 @media screen and (max-width: 651px) {
@@ -882,6 +923,16 @@ footer i {
     .address-hours-phone-boxes-outer p, .address-hours-phone-boxes-outer h3 {
         font-size: 1.4rem;
         line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 512px) {
+    .confirmation-message-container {
+        width: 100%;
+    }
+
+    .confirmation-message-container p {
+        padding: 8px;
     }
 }
 
@@ -1002,6 +1053,12 @@ footer i {
 @media screen and (max-width: 288px) {
     h1 {
         letter-spacing: 4px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #menu-button-container-outer {
+        background: url(../images/soybean-vertical.jpg) no-repeat center center;
     }
 }
     

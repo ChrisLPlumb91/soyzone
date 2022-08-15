@@ -7,8 +7,6 @@ The site itself serves to promote, and provide information about, the café, whi
 <hr>
 
 ## Technologies used
-<hr>
-
 <ul>
     <li>Hypertext Markup Language (HTML)</li>
     <li>Cascading Style Sheets (CSS)</li>
@@ -17,9 +15,9 @@ The site itself serves to promote, and provide information about, the café, whi
     <li>GitPod</li>
     <li>Git</li>
 </ul>
+<hr>
 
 ## Features
-<hr>
 
 ### Existing Features
 
@@ -31,9 +29,9 @@ The header is bright and colourful, with the leaves creating a sense of being ou
 
 The subheading "(A vegan café)" adds light humour to the header, further creating an atmosphere of friendliness and warmth, rather than intensity. This subheading was also necessary in order to ensure that the website's purpose is immediately apparent to a visitor. The heading itself is intended to be humorous, too. The choice of font for these elements further communicates the fact that they are intended to be humorous.
 
-The navigation menu can be used to return to the home page, or to navigate to the Menu and Contact Us pages, or to jump to the Find Us section of the home page. The links are ordered in terms of priority. People wouldn't be interested in knowing where to find the café if they did not know what kind of food and drink it offered, so the menu page precedes the jump link to the Find-Us section. They read the menus, and if they like what they see, they seek out the location of the café. The Contact Us page is the last link in the row, because it is more likely to be used after a person has visited the café itself. It is not likely that people will use it to ask about information that is already in the Find-Us section.
+The navigation menu can be used to return to the home page, or to navigate to the Menu and Contact Us pages, or to jump to the Find Us section of the home page. The links are ordered in terms of priority. People wouldn't be interested in knowing where to find the café if they did not know what kind of food and drink it offered, so the menu page precedes the jump link to the Find-Us section. They read the menus, and if they like what they see, they seek out the location of the café. The Contact Us page is the last link in the row, because it is more likely to be used after a person has visited the café itself. It is not likely that people will use it to ask about information that is already in the Find-Us section. The navigation bar also highlights the link to the page that you are currently on.
 
-The navigation bar also highlights the link to the page that you are currently on.
+Finally, the beginning of the first section can be seen at the bottom of the screen. This was a conscious choice, as without it, people might initially think that there is nothing else below the header. They would of course probably spot the scroll bar, but that moment of confusion shouldn't occur at all with the top of the first section being visible. This is a technique that I have used throughout the website.
 <hr>
 
 The <strong>footer</strong> is also used across the site. It contains links for four separate social media accounts associated with the page.
@@ -45,7 +43,7 @@ The footer is similarly minimalistic. The background image is of a heap of soybe
 The four links are coloured according to the official colours of each social media site in order to make them more easily identifiable. Visitors are less likely to click on the wrong link, and are therefore less likely to experience frustration while using the site. Each link glows when hovered over, which makes them more visible, as well as more tactile. I believe little things like this make a user's experience of the website a more pleasurable one.
 <hr>
 
-As with the header and the footer, there is also a small <strong>"you are here"</strong> message box that is overlaid on each page. This box tells the user which page they are currently on. I opted for this rather than a fixed header, because I felt that it was less obtrusive. Its red colour makes it stand out, and makes up for its small size. Hovering over it causes it to become more opaque, and to pop out, just in case a visitor finds that it is not visible enough.
+As with the header and the footer, there is also a small <strong>"you are here"</strong> message box that is overlaid on each page, and it can be seen at the bottom right corner of the page at all times. This box tells the user which page they are currently on. I opted for this rather than a fixed header, because I felt that it was less obtrusive. Its red colour makes it stand out, and makes up for its small size. Hovering over it causes it to become more opaque, and to pop out, just in case a visitor finds that it is not visible enough.
 
 This message ensures that the visitor knows what page they are on at all times.
 
@@ -96,7 +94,7 @@ Finally, there is the <strong>confirmation</strong> page, which appears for 4 se
 
 This page is an extension of the contact us page, and serves to give even more feedback to the user. Together with the feedback given by the form elements on the contact us page, this page makes the visitor feel reassured that their message will not just be sent into the ether.
 
-The image of a flash of light is eye-catching, and ensures that the visitor will see the message and learn from it that their message has been received.
+The image of a flash of light is eye-catching, and ensures that the visitor will see the message and learn from it that their message has been received. They are also given ten seconds to read the message. This may seem like a long time, but it is an accessibility consideration, e.g. people with dyslexia. For those who read the message quickly, there is an option to manually redirect via the link at the foot of the message.
 <hr>
 
 ### Features yet to be implemented
@@ -109,13 +107,11 @@ Deciding to go vegan can be overwhelming, because there are many dimensions to i
 <hr>
 
 ## Testing
-<hr>
 
 <em>Please refer to TEST.md.</em>
 <hr>
 
 ## Deployment
-<hr>
 
 The process followed in order to deploy this project to GitHub Pages was as follows:
 <ol>
@@ -132,7 +128,6 @@ Live link to this project: https://chrislplumb91.github.io/soyzone/
 <hr>
 
 ## Credits
-<hr>
 
 ### Content
 The fonts used across the website were taken from Google Fonts.
