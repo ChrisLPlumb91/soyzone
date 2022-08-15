@@ -178,3 +178,9 @@ For this final set of tests, I entered various combinations of text into the fie
 
 The only issue I noticed was that the email input element seems to accept my email address in this form: chrislplumb91@h, i.e. without any top-level domain. However, according to a post I read on Stack Overflow, email addresses without periods or top-level domains are technically valid, and the email input element accepts all valid email addresses. So this would seem to be a feature rather than a bug.
 <hr>
+
+## Validator Results
+
+W3C:
+
+Jigsaw: http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fchrislplumb91.github.io%2Fsoyzone%2F&usermedium=all&vextwarning=&warning=1

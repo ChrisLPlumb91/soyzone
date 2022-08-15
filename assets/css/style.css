@@ -176,11 +176,11 @@ header {
     font-size: 3rem;
 }
 
-.list-blocks {
+.header-menus {
     display: inline;
 }
 
-#header-menu li {
+.header-menus li {
     display: inline;
 
     font-size: 4rem;
@@ -804,7 +804,7 @@ footer i {
     }
 }
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1023px) {
     #header-logo-container-outer {
         margin-bottom: 32px;
     }
@@ -817,8 +817,8 @@ footer i {
         margin-bottom: 16px;
     }
     
-    #header-menu li {
-        margin: 0 32px 0 32px;
+    .header-menus li {
+        margin: 0 40px 0 40px;
     } 
 }
 
@@ -849,7 +849,7 @@ and no food. */
         font-size: 2rem;
     }
 
-    #header-menu li {
+    .header-menus li {
         margin: 0 32px 0 32px;
         font-size: 3rem;
     }
@@ -944,7 +944,7 @@ and no food. */
         text-shadow: 2px 2px 2px #444444;
     }
 
-    #header-menu li {
+    .header-menus li {
         font-size: 2.5rem;
     }
 
@@ -961,7 +961,7 @@ and no food. */
 }
 
 @media screen and (max-width: 590px) {
-    #header-menu li {
+    .header-menus li {
         margin: 0 16px 0 16px;
     }
 }
@@ -993,7 +993,7 @@ and no food. */
     }
 }
 
-@media screen and (max-width: 462px) {
+@media screen and (max-width: 463px) {
     #intro-section > div {
         vertical-align: middle;
     }
@@ -1005,8 +1005,8 @@ and no food. */
     #intro-words > h2 {
         font-size: 2rem;
     }
-    
-    .list-blocks {
+
+    .header-menus {
         display: block;
     }
 
